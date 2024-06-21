@@ -16,6 +16,14 @@ port_scanner.py: Script for scanning open ports on a target IP.
 
 net_scan.py: Main script for analyzing network traffic and identifying security vulnerabilities.
 
+Libraries Used
+
+import socket
+
+import subprocess
+
+from datetime import datetime
+
 Features
 
 Network Security Scanner Tool
