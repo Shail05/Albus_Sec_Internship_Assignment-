@@ -10,11 +10,11 @@ Network Traffic Analysis: Provides insights into network traffic patterns, proto
 
 Code Structure
 
-ip_identifier.py: Script for identifying the IPv4 address of a domain name.
+ip_add.py: Script for identifying the IPv4 address of a domain name.
 
 port_scanner.py: Script for scanning open ports on a target IP.
 
-network_analyzer.py: Main script for analyzing network traffic and identifying security vulnerabilities.
+net_scan.py: Main script for analyzing network traffic and identifying security vulnerabilities.
 
 Features
 
