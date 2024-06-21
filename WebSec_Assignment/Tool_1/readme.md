@@ -21,6 +21,29 @@ password_generator.py: Script for generating strong passwords.
 encod_decod.py: Script for encrypting and decrypting passwords.
 
 
+Libraries Used:
+
+import hashlib
+
+import getpass
+
+import os
+
+import getpass
+
+import base64
+
+import secrets
+
+import string
+
+from cryptography.fernet import Fernet
+
+from cryptography.hazmat.primitives import hashes
+
+from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
+
+
 Features
 
 Password Manager Tool
