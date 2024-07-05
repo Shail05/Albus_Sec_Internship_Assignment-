@@ -1,79 +1,93 @@
-Web Security Assignment
+# Web Security Assignment
 
-Overview
+## Overview
+This assignment focuses on enhancing web security through the development of two essential tools:
 
-This assignment focuses on enhancing web security through the creation of two essential tools:
+1. **Password Manager Tool**
+2. **Network Security Scanner Tool**
 
-Password Manager Tool
+Each tool addresses specific aspects of web security, providing users with powerful features to protect and manage their digital assets. The development of these tools not only strengthened my understanding of web security principles but also significantly improved my Python coding skills through hands-on practice and problem-solving.
 
-Network Security Scanner Tool
+## Tools Description
 
-Each tool addresses a specific aspect of web security, providing users with powerful features to protect and manage their digital assets. Developing these tools not only strengthened my understanding of web security principles but also significantly improved my Python coding skills through hands-on practice and problem-solving.
+### Password Manager Tool
 
-Tools Description
-1. Password Manager Tool
+The **Password Manager Tool** is designed to securely store and retrieve passwords. It includes the following features:
 
-The Password Manager Tool is designed to securely store and retrieve passwords. It includes the following features:
+- **Secure Storage and Retrieval**: Allows users to securely store and retrieve their passwords.
+- **Password Generation**: Generates strong, random passwords to enhance security.
+- **Encryption**: Encrypts stored passwords to protect them from unauthorized access.
 
-Secure Storage and Retrieval: Allows users to securely store and retrieve their passwords.
+#### Code Structure
 
-Password Generation: Generates strong, random passwords to enhance security.
+- **pass_manager(main).py**: Main script for integrating functionalities from other files.
+- **pass_manager.py**: Handles core functionality for storing and retrieving passwords.
+- **password_generator.py**: Generates strong passwords using cryptographic techniques.
+- **encod_decod.py**: Encodes and decodes passwords using Base64 and Fernet symmetric encryption.
 
-Encryption: Encrypts stored passwords to protect them from unauthorized access.
+#### Libraries Used
 
-Code Structure
+- **hashlib**: Provides a common interface to many secure hash and message digest algorithms.
+- **getpass**: Facilitates secure handling of passwords and other sensitive input.
+- **os**: Provides a way of using operating system-dependent functionality like reading or writing to the file system.
+- **base64**: Provides functions for encoding binary data to Base64 and decoding Base64 back to binary data.
+- **secrets**: Provides functions for generating secure random numbers suitable for cryptographic use.
+- **string**: Contains a collection of string constants and utility functions.
+- **cryptography.fernet**: Implements the Fernet symmetric encryption standard.
+- **cryptography.hazmat.primitives.hashes**: Provides a variety of cryptographic hash functions.
+- **cryptography.hazmat.primitives.kdf.pbkdf2**: Implements the PBKDF2 key derivation function.
 
-pass_manager(main).py: Main script for storing and retrieving passwords.
+#### Working of the Main Code
 
-pass_manager.py: Script for storing and retrieving passwords.
+The `pass_manager(main).py` script serves as the entry point of the application. It interprets the user's choices and executes the corresponding functions:
 
-password_generator.py: Script for generating strong passwords.
+1. **User Interaction**: Presents options to the user and collects input.
+2. **Password Generation**: Utilizes the secure random generation functions and encrypts the generated password.
+3. **Adding Passwords**: Stores new passwords securely in a file.
+4. **Retrieving Passwords**: Retrieves and securely handles stored passwords.
 
-encod_decod.py: Script for encrypting and decrypting passwords.
+The Password Manager Tool ensures secure encryption, easy retrieval, and safe storage of passwords, enabling users to manage their passwords efficiently and securely.
 
-2. Network Security Scanner Tool
+### Network Security Scanner Tool
 
-The Network Security Scanner Tool consists of multiple components aimed at scanning networks and identifying potential security vulnerabilities. It includes the following features:
+The **Network Security Scanner Tool** is designed to help users identify open ports on a given IP address, enhancing network security by identifying potential vulnerabilities. It includes the following features:
 
-IP Address Identifier: Provides the IPv4 address of a domain name.
+- **IP Address Identifier**: Provides the IPv4 address of a domain name.
+- **Port Scanning**: Scans common ports (22, 443, 80) on a target IP to determine their status (open/closed).
+- **Network Traffic Analysis**: Provides insights into network traffic patterns, protocols, and potential security vulnerabilities.
 
-Port Scanning: Scans specified ports on a target IP to check for open ports.
+#### Code Structure
 
-Network Traffic Analysis: Provides insights into network traffic patterns, protocols, and potential security vulnerabilities.
+- **ip_add.py**: Outputs the IP address corresponding to a given domain name.
+- **port_scanner.py**: Scans specified ports on a target IP to check their status.
+- **net_scan.py**: Main script for analyzing network traffic and identifying security vulnerabilities.
 
-Code Structure
+#### Libraries Used
 
-ip_add.py: Script for identifying the IPv4 address of a domain name.
+- **socket**: Provides low-level networking interface.
+- **subprocess**: Allows spawning new processes, connecting to their input/output/error pipes, and obtaining their return codes.
+- **datetime**: Supplies classes for manipulating dates and times.
 
-port_scanner.py: Script for scanning open ports on a target IP.
+#### Working of the Main Code
 
-net_scan.py: Main script for analyzing network traffic and identifying security vulnerabilities.
+The `net_scan.py` script uses the imported libraries as follows:
 
-Installation
+1. **User Input**: Prompts the user to input an IP address and the desired time frame for the scan.
+2. **Socket Module**: Creates connections to the target IP address on the specified ports (22, 443, 80) to determine their status.
+3. **Subprocess Module**: Runs auxiliary commands or scripts if needed for advanced network operations or data processing.
+4. **Datetime Module**: Tracks the scan duration to ensure completion within the user-specified time limit and logs the start and end times.
 
-To install and set up the tools, follow these steps:
+#### Workflow
 
-Clone the repository:
+1. **Input Handling**: Prompts the user to enter the IP address they want to scan.
+2. **Port Scanning**: Iterates over the predefined ports, attempting to establish connections and marking their status.
+3. **Time Management**: Uses the `datetime` library to monitor and limit scan duration.
+4. **Output**: Displays the results of the scan (whether each port is open or closed) to the user.
 
-git clone https://github.com/Shail05/Albus_Sec_Internship_Assignment-/tree/main/WebSec_Assignment
+The Network Security Scanner Tool provides a straightforward and efficient method to check the status of critical ports on a target IP address, helping users identify potential security issues quickly.
 
-How This Assignment Improved My Python Skills
+## Conclusion
 
-Working on this assignment has significantly improved my Python coding skills in several ways:
+This Web Security Assignment was a valuable experience that enhanced my web security knowledge and significantly improved my Python programming skills. The development of the **Password Manager Tool** and the **Network Security Scanner Tool** equipped me with practical skills and a deeper understanding of cybersecurity concepts.
 
-Problem-Solving: Tackling real-world security issues and developing practical solutions enhanced my ability to think critically and solve complex problems.
-
-Code Structure: Organizing the code into separate modules for each functionality taught me the importance of clean, modular code.
-
-Security Best Practices: Implementing encryption and secure storage methods deepened my understanding of security best practices in software development.
-
-Network Programming: Developing the Network Security Scanner Tool provided hands-on experience with network programming and understanding network protocols.
-
-Conclusion
-
-This Web Security Assignment was a valuable experience that enhanced my web security knowledge and significantly improved my Python programming skills. The development of the Password Manager Tool and the Network Security Scanner Tool equipped me with practical skills and a deeper understanding of cybersecurity concepts.
-
-
-
-
-This README was generated for the Web Security Assignment. It includes details about the Password Manager Tool and the Network Security Scanner Tool, along with instructions for installation and usage. The assignment played a crucial role in improving my Python coding skills and understanding of web security
+Thank you for using these tools. Your feedback and contributions are welcome to improve and extend their functionality. For any queries or further assistance, please refer to the documentation.
