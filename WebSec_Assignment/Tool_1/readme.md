@@ -43,6 +43,9 @@ from cryptography.hazmat.primitives import hashes
 
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 
+Working of Main Code:
+
+Different functions are created to perform different operations.  Interpreting the code and beginning with choices asking user to give input according to their requirement. User can generate password and code will generate encrypted password in SHA256 hash. Moreover, operations like get password and add password are provided with advantage of saving the added passwords in separate file using file handling. Password Generating code provide benefits to users as it provide encrypted passwords, can even use and save them for future. 
 
 Features
 
@@ -53,3 +56,5 @@ Secure Storage and Retrieval: Uses encrypted storage to keep passwords safe.
 Password Generation: Creates complex passwords to enhance security.
 
 Encryption: Utilizes advanced encryption algorithms to protect passwords.
+
+-This tool give basic knowledge on how: encryption algorithms works, importing modules leads to concise coding.   
