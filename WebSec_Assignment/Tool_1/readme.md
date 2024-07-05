@@ -1,7 +1,6 @@
-Password Manager Tool
+**Password Manager Tool**
 
 The Password Manager Tool is designed to securely store and retrieve passwords. It includes the following features:
-
 
 Secure Storage and Retrieval: Allows users to securely store and retrieve their passwords.
 
@@ -23,25 +22,16 @@ encod_decod.py: Script for encrypting and decrypting passwords.
 
 Libraries Used:
 
-import hashlib
-
-import getpass
-
-import os
-
-import getpass
-
-import base64
-
-import secrets
-
-import string
-
-from cryptography.fernet import Fernet
-
-from cryptography.hazmat.primitives import hashes
-
-from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
+1. hashlib: Provides a common interface to many secure hash and message digest algorithms.
+2. getpass: Facilitates secure handling of passwords and other sensitive input.
+3. os: Provides a way of using operating system-dependent functionality like reading or writing to the file system.
+4. getpass: Facilitates secure handling of passwords and other sensitive input (repeated).
+5. base64: Provides functions for encoding binary data to Base64 and decoding Base64 back to binary data.
+6. secrets: Provides functions for generating secure random numbers suitable for cryptographic use.
+7. string: Contains a collection of string constants and utility functions.
+8. cryptography.fernet: Implements the Fernet symmetric encryption standard.
+9. cryptography.hazmat.primitives.hashes: Provides a variety of cryptographic hash functions.
+10. cryptography.hazmat.primitives.kdf.pbkdf2: Implements the PBKDF2 key derivation function.
 
 Working of Main Code:
 
